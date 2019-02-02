@@ -1,8 +1,4 @@
-export function cssSupports (property, value) {
-  if (CSS) {
-    return CSS.supports(property, value)
-  }
-
+export function cssSupports (property) {
   return toCamelCase(property) in document.body.style
 }
 
